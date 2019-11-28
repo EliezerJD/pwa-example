@@ -1,0 +1,8 @@
+curl -X POST -H "Authorization: key=AAAAgSmaI9s:APA91bG-sZ242fU2unSSLs9OBTjRGamc098vxsZLpkBLIekuzGkl0a9CB0BX6bZp8DOXl_WbVO4kccChlFAkMcyi3ZJV7BirKMT8EfzYCcs566KHTfvGRyaYg5kbLulDuHjzUY7kZbSf" -H "Content-Type: application/json" -d '{
+  "to": "e6OjdPy1XTI:APA91bFe508_eCmDF1cTYHATwFPOgIi6kjxWg8aO9DlmgyZ10-7vZQj8teE-F-Y9uTL6v35pViBacF0wOc6WwIgqJoR-vq2T-F-wJ0CkxV_h2bsJOOWOyAIA8SDKjxftjAjGtpC-S1rJ",
+  "notification": {
+    "title": "FCM Message",
+    "body": "This is an FCM Message to vue",
+    "icon": "./img/icons/android-chrome-192x192.png"
+  }
+}' https://fcm.googleapis.com/fcm/send

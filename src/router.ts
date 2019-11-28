@@ -1,6 +1,12 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
+import Login from './views/Login.vue';
+import Profile from './views/Profile.vue';
+import Register from './views/Register.vue';
+import Followers from './views/Followers.vue';
+import Camera from './views/Camera.vue';
+
 
 Vue.use(Router);
 
@@ -9,10 +15,40 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'home',
       component: Home,
     },
+    {
+      path: '/',
+      name: 'login',
+      component: Login,
+    },
+    {
+      path: '/camera',
+      name: 'camera',
+      component: Camera,
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login,
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: Register,
+    },
+    {
+      path: '/profile',
+      name: 'profile',
+      component: Profile,
+    },
+    {
+      path: '/followers',
+      name: 'followers',
+      component: Followers,
+    },  
     {
       path: '/about',
       name: 'about',

@@ -1,0 +1,38 @@
+//registro
+
+firebase.auth().createUserWithEmailAndPassword(this.email, this.password).then(
+        function(error) {
+          alert("Error");
+          console.log(error.message);
+        },
+        function(user) {
+          alert("Ok");
+        }
+      );
+
+      firebase.database().ref('usuarios/' + firebase.auth().currentUser.uid).set({
+        username: 'Eliezer',
+        uid: firebase.auth().currentUser.uid,
+      });
+
+
+//filtro imagenes
+      firebase.database().ref("imagenes/").orderByValue().on("value", function(snapshot) {
+  snapshot.forEach(function(data) {
+  	if(data.val().usernameId==1){
+  		console.log(data.val().url);
+  		console.log(data.val().usernameId);
+  	}
+  	
+  });
+});
+
+
+//subir url a bd
+
+firebase.database().ref('imagenes/' + "img2").set({
+        usernameId: '1',
+        url: 'soyunaurl2',
+      });
+
+
