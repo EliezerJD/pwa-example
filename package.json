@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "firebase deploy --only hosting"
+    "deploy": "firebase deploy --only hosting",
+    "start": "npm run serve"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",

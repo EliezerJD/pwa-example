@@ -40,7 +40,6 @@ messaging.requestPermission().then(() => {
 
 
 
-
 new Vue({
   router,
   store,
