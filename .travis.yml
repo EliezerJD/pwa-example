@@ -13,6 +13,7 @@ before_script:
   - npm install -g vue
 
 script:
+  - npm run lint
   - npm run build
 
 after_success:

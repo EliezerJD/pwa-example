@@ -48,7 +48,7 @@ export default new Router({
       path: '/followers',
       name: 'followers',
       component: Followers,
-    },  
+    },
     {
       path: '/about',
       name: 'about',

@@ -37,36 +37,31 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import firebase from 'firebase';
-import router from '../router'
+import router from '../router';
 export default {
-	data () {
-	    return {
-	      username: ''
-	    }
+  data() {
+      return {
+        username: '',
+      };
     },
-	methods: {
-    logout: function() {
-      var temp4:any = localStorage.getItem("token");
+  methods: {
+    logout() {
+      const temp4: any = localStorage.getItem('token');
       localStorage.clear();
-      localStorage.setItem("token", temp4);
-      router.push('/login')
+      localStorage.setItem('token', temp4);
+      router.push('/login');
     },
-    home: function() {
-      router.push('home')
+    home() {
+      router.push('home');
     },
-    profile: function() {
-      router.push('profile')
+    profile() {
+      router.push('profile');
     },
-    followers: function() {
-      router.push('followers')
+    followers() {
+      router.push('followers');
     },
   },
-  created() {
-
-  },
-  
-}
-
+};
 </script>
 
 <style>
