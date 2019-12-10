@@ -43,7 +43,22 @@ export default {
       email: '',
       password: ''
     }
-  .message);
+  },
+  methods: {
+    login: function() {
+      firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
+        (user) => {
+          alert("Logueado");
+          localStorage.setItem("id", firebase.auth().currentUser.uid);
+          console.log(localStorage.getItem("token"));
+          firebase.database().ref("tokens_nav/"+localStorage.getItem("id")).set({
+                token: localStorage.getItem("token"),
+          });
+          this.$router.replace('home')
+        },
+        (error) => {
+          alert("Error");
+          console.log(error.message);
         }
       );
     },
