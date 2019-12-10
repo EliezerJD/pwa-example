@@ -32,6 +32,7 @@ messaging.requestPermission().then(() => {
       localStorage.setItem('token', tokenTemp);
     });
 }).catch((err) => {
+  alert(err);
 });
 
 
