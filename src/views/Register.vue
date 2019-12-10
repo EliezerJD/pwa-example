@@ -61,7 +61,7 @@ export default {
       );
     },
     loginPage: function() {
-      this.$router.replace('login')
+      this.$router.replace('login');
     },
   },
   mounted() {

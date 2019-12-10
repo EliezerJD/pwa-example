@@ -9,7 +9,7 @@
       <hr class="hr2">
       <div class="o">o</div>
       <div class="facebooklog">
-       <i class="fa fa-facebook-official"></i> Iniciar sesión con Facebook
+       <i class="fa fa-facebook-official"></i> Iniciar sesión con Face
       </div>
       <div class="recover">
         ¿Olvidaste tu contraseña?
