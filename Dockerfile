@@ -1,4 +1,4 @@
-FROM node:10
+FROM node:10 as develop-stage
 # use changes to package.json to force Docker not to use the cache
 # when we change our application's nodejs dependencies:
 ADD package.json /tmp/package.json
